@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* CORES */
+    --fundoPrincipal: #0A0A0A;
+    --fundoSecundario: #111111;
+    --fundoTerciario: #18181B;
+
+    --vermelhoPrincipal: #C1121F; /* DC2626 */
+    --vermelhoHover: #B91C1C;
+
+    --azulMarinho: #0F172A;
+
+    --brancoPrincipal: #FFFFFF;
+    --textoSecundario: #A1A1AA;
+
+    --bordaSuave: rgba(15, 23, 42, .9);
+
+    /* FONTES */
+    --fonteTitulo: 'Bebas Neue', sans-serif;
+    --fontePadrao: 'Poppins', sans-serif;
+
+    /* TRANSIÇÃO */
+    --transition: .3s ease;
+}
+
+
+body{
+    background: var(--fundoPrincipal);
+    font-family: var(--fontePadrao);
+    color: var(--brancoPrincipal);
+}
+
+
+/* HEADER */
+.header-container{
+    background: var(--fundoPrincipal);
+    border-bottom: 1px solid var(--bordaSuave);
+}
+
+.navbar{
+    min-height: 90px;
+}
+
+/* LOGO */
+
+.header-logo{
+    width: 125px;
+    height: auto;
+}
+
+/* LINKS */
+
+.header-link{
+    position: relative;
+    color: var(--brancoPrincipal) !important;
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    padding: 10px 18px !important;
+    transition: var(--transition);
+}
+
+.header-link::after{
+    content: '';
+
+    position: absolute;
+
+    left: 18px;
+    bottom: 0;
+
+    width: 0%;
+    height: 2px;
+
+    background: var(--vermelhoPrincipal);
+
+    transition: var(--transition);
+}
+
+.header-link:hover{
+    color: var(--vermelhoPrincipal) !important;
+}
+
+.header-link:hover::after{
+    width: calc(100% - 36px);
+}
+
+.active-link{
+    color: var(--vermelhoPrincipal) !important;
+}
+
+.active-link::after{
+    width: calc(100% - 36px);
+}
+
+
+.header-btn-whatsapp{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 10px;
+    border: 1px solid var(--vermelhoPrincipal);
+    background: transparent;
+    color: var(--vermelhoPrincipal);
+    font-size: .9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.header-btn-whatsapp:hover{
+    background: var(--vermelhoPrincipal);
+    color: var(--brancoPrincipal);
+    transform: translateY(-2px);
+}
+
+.header-btn-whatsapp i{
+    font-size: 1rem;
+}
+
+.navbar-toggler{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler i{
+    color: var(--brancoPrincipal);
+    font-size: 2rem;
+}
+
+
+/* INÍCIO */
+
+.inicio-container {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.70),
+        rgba(0, 0, 0, 0.70)
+    ),
+    url('../img/img-inicio/teste1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 628px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, .35); 
+}
+
+.inicio-card:hover{
+    background: rgba(15, 23, 42, .45);
+    transition: .3s ease;
+}
+
+.inicio-conteudo {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.inicio-atendimento {
+    border: 2px solid var(--vermelhoPrincipal);
+}
+
+.inicio-titulo {
+    font-family: var(--fonteTitulo);
+    font-size: 4rem;
+    line-height: .95;
+    letter-spacing: 1px;
+}
+
+.palavra-destaque {
+    color: var(--vermelhoPrincipal);
+}
+
+.servico-subtitulo {
+    font-family: var(--fontePadrao);
+    color: var(--vermelhoPrincipal);
+}
+
+.servico-titulo {
+    font-family: var(--fonteTitulo);
+    font-size: 3.5rem;
+    line-height: .95;
+    letter-spacing: 1px;
+}
+
+.inicio-introducao {
+    color: var(--textoSecundario);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.inicio-btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 10px;
+    border: 1px solid var(--vermelhoPrincipal);
+    background: var(--vermelhoPrincipal);
+    color: var(--brancoPrincipal);
+    font-size: .9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.inicio-btn-whatsapp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(220, 38, 38, .25);
+}
+
+.inicio-btn-whatsapp i,
+.inicio-btn-servicos i {
+    font-size: 1.2rem;
+}
+
+.inicio-btn-servicos {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 10px;
+    border: 1px solid var(--brancoPrincipal);
+    background: transparent;
+    color: var(--brancoPrincipal);
+    font-size: .9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.inicio-btn-servicos:hover {
+    background: var(--brancoPrincipal);
+    color: var(--fundoPrincipal);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, .25);
+}
+
+.inicio-sub-conteudo {
+    background: var(--fundoSecundario);
+}
+
+.inicio-icon {
+    font-size: 2.8rem;
+    color: var(--vermelhoPrincipal);
+}
+
+
+/* SERVIÇOS */
+
+.servicos-container{
+    /* background: var(--fundoTerciario); */
+    background: linear-gradient(180deg, #0A0A0A 0%, #111111 100%);
+    padding-bottom: 80px;
+   /*  background-image: url('../img/Gemini_Generated_Image_dxw7e6dxw7e6dxw7.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+/* CARD */
+
+.servico-card{
+    background: linear-gradient(
+        180deg,
+        #111111,
+        #0A0A0A
+    );
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    height: 100%;
+
+    transition: .4s ease;
+
+    position: relative;
+}
+
+/* HOVER */
+
+.servico-card:hover{
+    transform: translateY(-8px);
+
+    border-color: rgba(220,38,38,.35);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.45),
+        0 0 25px rgba(220,38,38,.12);
+}
+
+/* IMAGEM */
+
+.servico-img{
+    height: 220px;
+
+    overflow: hidden;
+}
+
+.servico-img img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s ease;
+}
+
+.servico-card:hover .servico-img img{
+    transform: scale(1.05);
+}
+
+/* CONTEÚDO */
+
+.servico-content{
+    padding: 30px 24px 24px;
+
+    position: relative;
+}
+
+/* ÍCONE */
+
+.servico-icon{
+    position: absolute;
+
+    top: -35px;
+    left: 24px;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: #0A0A0A;
+
+    border: 2px solid var(--vermelhoPrincipal);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 0 20px rgba(220,38,38,.18);
+}
+
+.servico-icon i{
+    color: var(--vermelhoPrincipal);
+
+    font-size: 2rem;
+}
+
+/* TÍTULO */
+
+.servico-card h4{
+    font-size: 1.7rem;
+
+    margin-top: 18px;
+
+    font-family: var(--fonteTitulo);
+
+    letter-spacing: .5px;
+
+    color: var(--brancoPrincipal);
+}
+
+/* LINHA */
+
+.servico-linha{
+    width: 45px;
+    height: 3px;
+
+    background: var(--vermelhoPrincipal);
+
+    border-radius: 10px;
+
+    margin: 14px 0 18px;
+}
+
+/* TEXTO */
+
+.servico-card p{
+    color: var(--textoSecundario);
+
+    line-height: 1.8;
+
+    font-size: .95rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.whatsapp-fixo{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--vermelhoPrincipal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    cursor: pointer;
+}
+
+@media (max-width: 991px){
+    .navbar-collapse{
+        background: var(--fundoSecundario);
+        padding: 30px;
+        margin-top: 20px;
+        border-radius: 16px;
+        border: 1px solid var(--bordaSuave);
+    }
+
+    .navbar-nav{
+        gap: 12px;
+    }
+
+    .header-link{
+        padding: 12px 0 !important;
+    }
+
+    .header-link::after{
+        left: 0;
+    }
+
+    .header-link:hover::after,
+    .active-link::after{
+        width: 70px;
+    }
+
+    .header-btn-whatsapp{
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width: 768px){
+    .inicio-titulo{
+        font-size: 3.2rem;
+    }
+
+    .inicio-card:hover{
+        background: transparent;
+    }
+
+    .servico-subtitulo {
+        font-size: 1.15rem;
+    }
+}
