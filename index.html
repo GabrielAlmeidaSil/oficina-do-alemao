@@ -3,17 +3,22 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Oficina mecânica e auto elétrica 24 horas em Piranguinho MG. Diagnóstico eletrônico, freios, suspensão, bateria, mecânica geral e atendimento emergencial. Oficina do alemão.">
+        <meta name="keywords" content="oficina mecânica piranguinho, auto elétrica piranguinho, mecânico 24 horas, oficina do alemão, mecânica automotiva mg, mecânica, mecânico">
         <link rel="preload"  as="image" href="img/img-inicio/teste1-2.webp" />
 
         <title>Oficina do Alemão | Mecânica Automotiva e Auto Elétrica 24h</title>
 
-        
+        <link rel="icon" href="img/img-logo/logo-favicon.png" type="image/x-icon">
 
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+        <!-- AOS JS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
@@ -60,27 +65,33 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link header-link" href="#">
-                                    DIFERENCIAIS
+                                <a class="nav-link header-link text-nowrap" href="#sobreNos">
+                                    SOBRE NÓS
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link header-link" href="#">
+                                <a class="nav-link header-link" href="#galeria">
                                     GALERIA
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link header-link" href="#">
+                                <a class="nav-link header-link" href="#depoimentos">
+                                    DEPOIMENTOS
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link header-link" href="#contato">
                                     CONTATO
                                 </a>
                             </li>
                         </ul>
 
                         <!-- BOTÃO WHATSAPP -->
-                        <div class="d-grid d-lg-block">
-                            <a href="#" class="header-btn-whatsapp">
+                        <div class="d-none d-lg-block">
+                            <a href="https://wa.me/5535998197408?text=Olá!%20Encontrei%20o%20site%20da%20Oficina%20do%20Alemão%20e%20gostaria%20de%20mais%20informações." target="_blank" class="header-btn-whatsapp text-nowrap p-0 py-lg-2 px-lg-2">
                                 <i class="bi bi-whatsapp"></i>
                                 FALE CONOSCO
                             </a>
@@ -96,20 +107,20 @@
             <div class="container inicio-conteudo">
                 <div class="col-11 col-lg-5 mx-lg-0 mx-3">
                     <small class="inicio-atendimento rounded-pill fw-semibold px-3 py-1">
-                        <i class="bi bi-clock me-2"></i>
+                        <i class="bi bi-clock me-1"></i>
                         ATENDIMENTO 24 HORAS
                     </small>
-                    <h1 class="inicio-titulo mt-3">AUTO ELÉTRICA E MECÂNICA AUTOMOTIVA COM ATENDIMENTO <span class="palavra-destaque">24H</span>!</h1>
-                    <p class="inicio-introducao my-3">Agilidade, preço justo e garantia total do serviço para você rodar com segurança.</p>
+                    <h1 class="inicio-titulo mt-3" data-aos="fade-right" data-aos-delay="100">AUTO ELÉTRICA E MECÂNICA AUTOMOTIVA COM ATENDIMENTO <span class="palavra-destaque">24H</span>!</h1>
+                    <p class="inicio-introducao my-3" data-aos="fade-left" data-aos-delay="300">Agilidade, preço justo e garantia total do serviço para você rodar com segurança.</p>
                     <div class="row d-flex">
-                        <div class="col-0 col-lg-6 my-lg-0 my-1">
-                            <a href="#" class="inicio-btn-whatsapp justify-content-center w-100">
+                        <div class="col-0 col-lg-6 my-lg-0 my-1" data-aos="fade-up" data-aos-delay="600">
+                            <a href="https://wa.me/5535998197408?text=Olá!%20Encontrei%20o%20site%20da%20Oficina%20do%20Alemão%20e%20gostaria%20de%20mais%20informações." target="_blank" class="inicio-btn-whatsapp justify-content-center w-100">
                                 <i class="bi bi-whatsapp"></i>
                                 WHATSAPP
                             </a>
                         </div>
-                        <div class="col-0 col-lg-6 my-lg-0 my-1">
-                            <a href="#" class="inicio-btn-servicos justify-content-center text-nowrap w-100">
+                        <div class="col-0 col-lg-6 my-lg-0 my-2" data-aos="fade-down" data-aos-delay="900">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Tv+Zeca+Euzebio+413+Piranguinho+MG" target="_blank" class="inicio-btn-servicos justify-content-center text-nowrap w-100">
                                  <i class="bi bi-geo-alt"></i>
                                 COMO CHEGAR
                             </a>
@@ -126,22 +137,22 @@
                     <div class="col-6 col-lg-3 py-3 text-center text-md-start inicio-card">
                         <i class="bi bi-clock inicio-icon"></i>
                         <h4>ATENDIMENTO 24H</h4>
-                        <p class="inicio-introducao d-none d-md-flex">Suporte rápido para emergências e imprevistos.</p>
+                        <p class="inicio-sub-info d-none d-md-flex">Suporte rápido para emergências e imprevistos.</p>
                     </div>
                     <div class="col-6 col-lg-3 py-3 text-center text-md-start inicio-card">
                         <i class="bi bi-shield-check inicio-icon"></i>
                         <h4>GARANTIA TOTAL</h4>
-                        <p class="inicio-introducao d-none d-md-flex">Serviços com nota fiscal e garantia sem custos extras.</p>
+                        <p class="inicio-sub-info d-none d-md-flex">Serviços com nota fiscal e garantia sem custos extras.</p>
                     </div>
                     <div class="col-6 col-lg-3 py-3 text-center text-md-start inicio-card">
                         <i class="bi bi-lightning-charge inicio-icon"></i>
                         <h4>ATENDIMENTO ÁGIL</h4>
-                        <p class="inicio-introducao d-none d-md-flex">Diagnóstico rápido e serviço eficiente.</p>
+                        <p class="inicio-sub-info d-none d-md-flex">Diagnóstico rápido e serviço eficiente.</p>
                     </div>
                     <div class="col-6 col-lg-3 py-3 text-center text-md-start inicio-card">
                         <i class="bi bi-cash-stack inicio-icon"></i>
                         <h4>PREÇO JUSTO</h4>
-                        <p class="inicio-introducao d-none d-md-flex">Qualidade e transparência em cada serviço.</p>
+                        <p class="inicio-sub-info d-none d-md-flex">Qualidade e transparência em cada serviço.</p>
                     </div>
                 </div>
             </div>
@@ -149,57 +160,29 @@
 
 
         <!-- SERVIÇOS -->
+        <section class="servicos-container" id="servicos">
+            <div class="secao-introducao">
 
-        <div class="servicos-container" id="servicos">
-            <div class="text-center pt-5 pb-4">
-
-                <h5 class="servico-subtitulo">
+                <h5 class="secao-subtitulo">
                     <i class="bi bi-dash-lg me-1"></i>
                         NOSSOS SERVIÇOS
                     <i class="bi bi-dash-lg ms-1"></i>
                 </h5>
 
-                <h1 class="servico-titulo mt-3">SOLUÇÕES <span class="palavra-destaque">COMPLETAS <br> </span> PARA SEU VEÍCULO</h1>
-                <p class="inicio-introducao">Auto elétrica e mecânica automotiva com qualidade, tecnologia <br> e atendimento 24 horas para sua total segurança.</p>
+                <h2 class="secao-titulo mt-3">SOLUÇÕES <span class="palavra-destaque">COMPLETAS <br> </span> PARA SEU VEÍCULO</h2>
+                <p class="secao-paragrafo">Auto elétrica e mecânica automotiva com qualidade, tecnologia e atendimento 24 horas para sua total segurança.</p>
             </div>
 
             <div class="container">
                 <div class="row px-4 px-lg-0">
 
                     <!-- CARD 1 -->
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
-                        <div class="servico-card">
-                            <div class="servico-img">
-                                <img 
-                                    src="img/img-servico/servico-eletrica.webp" 
-                                    alt="Auto elétrica"
-                                    class="img-fluid"
-                                    loading="lazy"
-                                >
-                            </div>
-
-                            <div class="servico-content">
-                                <div class="servico-icon">
-                                    <i class="bi bi-battery-charging"></i>
-                                </div>
-                                <h4>AUTO ELÉTRICA</h4>
-                                <div class="servico-linha"></div>
-
-                                <p>
-                                    Diagnóstico e reparo de sistemas elétricos,
-                                    bateria, alternador e motor de partida.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD 2 -->
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
                         <div class="servico-card">
                             <div class="servico-img">
                                 <img 
                                     src="img/img-servico/servico-mecanica.webp" 
-                                    alt="Mecânica"
+                                    alt="Motor de carro sendo consertado"
                                     class="img-fluid"
                                     loading="lazy"
                                 >
@@ -220,14 +203,41 @@
                         </div>
                     </div>
 
+                    <!-- CARD 2 -->
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="servico-card">
+                            <div class="servico-img">
+                                <img 
+                                    src="img/img-servico/servico-eletrica.webp" 
+                                    alt="Painel elétrico do carro"
+                                    class="img-fluid"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="servico-content">
+                                <div class="servico-icon">
+                                    <i class="bi bi-battery-charging"></i>
+                                </div>
+                                <h4>AUTO ELÉTRICA</h4>
+                                <div class="servico-linha"></div>
+
+                                <p>
+                                    Diagnóstico e reparo de sistemas elétricos,
+                                    bateria, alternador e motor de partida.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- CARD 3 -->
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="300">
 
                         <div class="servico-card">
                             <div class="servico-img">
                                 <img 
                                     src="img/img-servico/servico-diagnostico.webp" 
-                                    alt="Diagnóstico"
+                                    alt="Notebook com diagnóstico eletrônico"
                                     class="img-fluid"
                                     loading="lazy"
                                 >
@@ -249,7 +259,7 @@
                     </div>
 
                     <!-- CARD 4 -->
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="400">
                         <div class="servico-card">
                             <div class="servico-img">
                                 <img 
@@ -276,47 +286,462 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
+        <!-- SOBRE NÓS -->
+        <section id="sobreNos" class="sobre-nos-container">
+            <div class="container  my-5">
+
+                <div class="row gy-5">
+
+                    <!-- ESQUERDA -->
+                    <div class="col-12 col-lg-6 text-center text-lg-start">
+
+                        <h5 class="secao-subtitulo" data-aos="fade-right" data-aos-delay="200">
+                            <i class="bi bi-dash-lg me-1"></i>
+                            SOBRE NÓS
+                            <i class="bi bi-dash-lg ms-1"></i>
+                        </h5>
+
+                        <h2 class="secao-titulo mt-3" data-aos="fade-right" data-aos-delay="250">
+                            MAIS QUE UMA OFICINA,
+                            <br>
+                            SOMOS
+                            <span class="palavra-destaque">PARCEIROS</span>
+                            <br>
+                            DO SEU CAMINHO.
+                        </h2>
+
+                        <p class="secao-paragrafo" data-aos="fade-right" data-aos-delay="300">
+                            A Oficina do Alemão atua há mais de 3 anos oferecendo serviços de 
+                            auto elétrica e mecânica automotiva para clientes de Piranguinho e região. <br>
+                            Realizamos serviços de mecânica geral, auto elétrica, diagnóstico eletrônico, 
+                            freios e suspensão, além de atendimento 24 horas para situações emergenciais. <br>
+                            Nossa missão é garantir mais segurança e tranquilidade para quem confia 
+                            seu veículo ao nosso trabalho.
+                        </p>
+
+                        <!-- TOPICOS SOBRE NOS -->
+                        <div class="d-none d-lg-flex flex-column">
+                            <div class="d-flex align-items-center" data-aos="fade-right" data-aos-delay="300">
+                                <i class="bi bi-shield-check sobre-nos-icone fs-4 rounded rounded-4"></i>
+                                <div class="d-flex flex-column ms-3">
+                                    <strong>Qualidade e confiança</strong>
+                                    <small class="secao-paragrafo">Serviços com garantia e notas fiscais.</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center my-3" data-aos="fade-right" data-aos-delay="320">
+                                <i class="bi bi-people sobre-nos-icone fs-4 rounded rounded-4"></i>
+                                <div class="d-flex flex-column ms-3">
+                                    <strong>Equipe especializada</strong>
+                                    <small class="secao-paragrafo">Profissionais capacitados.</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center" data-aos="fade-right" data-aos-delay="340">
+                                <i class="bi bi-clock sobre-nos-icone fs-4 rounded rounded-4"></i>
+                                <div class="d-flex flex-column ms-3">
+                                    <strong>Atendimento 24 horas</strong>
+                                    <small class="secao-paragrafo">Sempre pronto para te atender.</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- DIREITA -->
+                    <div class="col-12 col-lg-6 my-0 my-lg-5">
+                        <img
+                            src="img/img-sobreNos/sobre-fachada.webp"
+                            alt="Fachada da ofiicina do Alemão"
+                            loading="lazy"
+                            class="img-fluid rounded-4"
+                        >
+
+                        <div class="d-none d-xxl-flex justify-content-between">
+                            <img
+                                src="img/img-sobreNos/sobre-ferramentas.webp"
+                                alt="Ferramentas da oficina do Alemão"
+                                loading="lazy"
+                                class="img-fluid rounded-4 mt-3"
+                                width="200"
+                            >
+                            <img
+                                src="img/img-sobreNos/sobre-veiculos.webp"
+                                alt="Veículos da oficina do Alemão"
+                                loading="lazy"
+                                class="img-fluid rounded-4 mt-3"
+                                width="200"
+                            >
+                            <img
+                                src="img/img-sobreNos/sobre-produtos.webp"
+                                alt="Produtos da oficina do Alemão"
+                                loading="lazy"
+                                class="img-fluid rounded-4 mt-3"
+                                width="200"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="section-transition"></div> -->
 
 
+        <!-- GALERIA -->
+        <section class="mb-5" id="galeria">
+            <div class="container">
+                <div class="secao-introducao text-center">
+
+                    <!-- <div class="section-divider"></div>  -->
+
+                    <h5 class="secao-subtitulo">
+                        <i class="bi bi-dash-lg me-1"></i>
+                        GALERIA
+                        <i class="bi bi-dash-lg ms-1"></i>
+                    </h5>
+
+                    <h2 class="secao-titulo mt-3">
+                        NOSSO TRABALHO <br>
+                        EM <span class="palavra-destaque">DETALHES</span>
+                    </h2>
+
+                    <p class="secao-paragrafo">
+                        Veja alguns dos serviços realizados com dedicação e o padrão de qualidade da Oficina do Alemão.
+                    </p>
+                </div>
+
+                <!-- PRIMEIRA LINHA -->
+                <div class="row g-3 mb-3">
+
+                    <!-- FOTO GRANDE -->
+                    <div class="col-12 col-lg-6">
+                        <div class="galeria-item galeria-destaque mx-lg-0 mx-2">
+                            <img src="img/img-galeria/galeria-carros.webp" alt="Carros sendo consertados" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- GRID DIREITO -->
+                    <div class="col-12 col-lg-6">
+                        <div class="row g-3 h-100">
+
+                            <div class="col-6">
+                                <div class="galeria-item mx-lg-0 ms-2">
+                                    <img src="img/img-galeria/galeria-elevador.webp" alt="Elevador de carro" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="galeria-item mx-lg-0 me-2">
+                                    <img src="img/img-galeria/galeria-fachada.webp" alt="Fachada da oficina do Alemão" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="galeria-item mx-lg-0 ms-2">
+                                    <img src="img/img-galeria/galeria-jeep.webp" alt="Jeep sendo consertado" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="galeria-item mx-lg-0 me-2">
+                                    <img src="img/img-galeria/galeria-fusca.webp" alt="Fusca sendo consertado" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEGUNDA LINHA -->
+                <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                        <div class="galeria-item mx-lg-0 mx-2">
+                            <img src="img/img-galeria/galeria-alemao.webp" alt="Funcionários da oficina do Alemão" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="galeria-item mx-lg-0 mx-2">
+                            <img src="img/img-galeria/galeria-carros-2.webp" alt="Carros sendo consertados" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="galeria-item mx-lg-0 mx-2">
+                            <img src="img/img-galeria/galeria-funcionario.webp" alt="Funcionário da oficina do Alemão" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <!-- DEPOIMENTOS -->
+
+        <section class="depoimentos-container mb-5" id="depoimentos">
+            <div class="container">
+                <div class="secao-introducao text-center">
+
+                    <h5 class="secao-subtitulo">
+                        <i class="bi bi-dash-lg me-1"></i>
+                        DEPOIMENTOS
+                        <i class="bi bi-dash-lg ms-1"></i>
+                    </h5>
+
+                    <h2 class="secao-titulo mt-3">
+                        O QUE NOSSOS <br>
+                        CLIENTES <span class="palavra-destaque">DIZEM</span>
+                    </h2>
+
+                    <p class="secao-paragrafo">
+                        Veja o que nossos clientes dizem sobre nosso atendimento, qualidade e compromisso.
+                    </p>
+                </div>
+
+                <div class="row gap-4 d-flex justify-content-center px-4 px-md-0">
+
+                    <!-- DEPOIMENTO 1 -->
+                    <div class="col-12 col-lg-3 depoimento-card rounded-4 p-4 d-flex flex-column justify-content-between" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="depoimento-header d-flex justify-content-between align-items-center">
+                            <i class="bi bi-quote depoimento-icone fs-3"></i>
+
+                            <div class="d-flex depoimento-estrelas gap-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+
+                        <div class="depoimento-opiniao mt-3">
+                            <p> Nós ajudou muito, atendeu com rapidez e resolveu o problema, recomendo pra quem estiver passando por apuros na região de Brazópolis. </p>
+                        </div>
+
+                        <div class="depoimento-cliente d-flex my-3">
+                            <img src="img/img-depoimentos/depoimento-Jaqueline.webp" alt="Foto do cliente" class="depoimento-cliente-foto rounded-circle">
+
+                            <div class="depoimento-cliente-info d-flex align-items-center ms-3">
+                                <small>Jaqueline Backhaus</small>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DEPOIMENTO 2 -->
+                    <div class="col-12 col-lg-3 depoimento-card rounded-4 p-4 d-flex flex-column justify-content-between" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="depoimento-header d-flex justify-content-between align-items-center">
+                            <i class="bi bi-quote depoimento-icone fs-3"></i>
+
+                            <div class="d-flex depoimento-estrelas gap-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+
+                        <div class="depoimento-opiniao mt-3">
+                            <p> Uma oficina boa e de Qualidade, atendimento na hora, e eles dão mó atenção, além de trabalharem fora de horário para poder atender os clientes.  </p>
+                        </div>
+
+                        <div class="depoimento-cliente d-flex my-3">
+                            <img src="img/img-depoimentos/depoimento-lusa.webp" alt="Foto do cliente" class="depoimento-cliente-foto rounded-circle">
+
+                            <div class="depoimento-cliente-info d-flex align-items-center ms-3">
+                                <small>『Mafia _LuSa』</small>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DEPOIMENTO 3 -->
+                    <div class="col-12 col-lg-3 depoimento-card rounded-4 p-4 d-flex flex-column justify-content-between" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="depoimento-header d-flex justify-content-between align-items-center">
+                            <i class="bi bi-quote depoimento-icone fs-3"></i>
+
+                            <div class="d-flex depoimento-estrelas gap-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+
+                        <div class="depoimento-opiniao mt-3">
+                            <p> Ótimo preço, atendimento excelente e rápido. </p>
+                        </div>
+
+                        <div class="depoimento-cliente d-flex my-3">
+                            <img src="img/img-depoimentos/depoimento-gabriel.webp" alt="Foto do cliente" class="depoimento-cliente-foto rounded-circle">
+
+                            <div class="depoimento-cliente-info d-flex align-items-center ms-3">
+                                <small>Gabriel A. da Silva</small>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center my-3" data-aos="fade-up" data-aos-delay="500">
+                        <a href="https://www.google.com/search?sca_esv=5e57de7343b8f434&rlz=1C1GCEU_pt-PTBR1112BR1112&sxsrf=ANbL-n4Tv6zKW5vJWTCuj_xbeJ8QJCTQrA:1780679202736&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOXglmiZUUvfEgSux9PRXOT5SCnCVOSI_hVNW_6FZucSHDdgHnuanqoYLFg_VX7oFfJrEzY93fPPRIJwuXnkfNDgAc_eQctFr1zYqanvCSGGEJ-g-wUcIU5RmGUK3oFDmGfU9GQo%3D&q=Oficina+Do+Alem%C3%A3o+24hrs+Mec%C3%A2nica+Coment%C3%A1rios&sa=X&ved=2ahUKEwjX6Nn6yvCUAxUxK7kGHaZzGD4Q0bkNegQIHxAF&biw=1920&bih=919&dpr=1#lrd=0x94cb79b68de1c82d:0xbcb9d3e1b5a8176d,1,,,," target="_blank" class="depoimento-btn">
+                            VER TODAS AS AVALIAÇÕES
+
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <!-- RODAPÉ -->
+        <footer id="contato" class="pt-4 footer-container">
+            <div class="container pt-4">
+                <div class="row d-flex">
+                    <div class="col-12 col-md-6 col-lg-4 flex-column text-center text-lg-start">
+                        <img 
+                            src="img/img-footer/footer-logo.webp" 
+                            alt="Logo Oficina do Alemão"
+                            class="footer-logo m-auto m-lg-0"
+                        >
+
+                        <p class="py-4 footer-opaco">Soluções em elétrica e mecânica automotiva com atendimento 24 horas para emergências, diagnósticos e manutenção especializada.</p>
+
+                        <div class="footer-destaques d-none d-lg-flex flex-column gap-3 mt-4">
+
+                            <div class="footer-destaque-item">
+                                <i class="bi bi-clock-history"></i>
+                                <span>Atendimento 24 horas</span>
+                            </div>
+
+                            <div class="footer-destaque-item">
+                                <i class="bi bi-shield-check"></i>
+                                <span>Serviços com garantia</span>
+                            </div>
+
+                            <div class="footer-destaque-item">
+                                <i class="bi bi-star"></i>
+                                <span>Mais de 17 avaliações no Google</span>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 my-lg-0">
+                        <h5 class="footer-titulo fs-2">CONTATO</h5>
+                        <div class="servico-linha"></div>
+
+                        <div class="d-flex mt-4">
+                            <i class="bi bi-whatsapp footer-contato-icon me-3"></i>
+
+                            <div class="d-flex flex-column">
+                                <a href="https://wa.me/5535998197408?text=Olá!%20Encontrei%20o%20site%20da%20Oficina%20do%20Alemão%20e%20gostaria%20de%20mais%20informações." 
+                                    target="_blank" class="text-decoration-underline text-white fs-6">(35) 99819-7408
+                                </a>
+                                <small class="footer-opaco">WhatsApp 24h</small>
+                            </div>
+                        </div>                         
+                        <div class="d-flex mt-4">
+                            <i class="bi bi-geo-alt footer-contato-icon me-3"></i>
+
+                            <div class="d-flex flex-column">
+                                <a href="https://maps.app.goo.gl/k4j67nuPCvUiiw4w8" target="_blank" class="text-decoration-underline text-white fs-6">Tv. Zeca Euzébio, 413 - Canudos, Piranguinho - MG, 37508-000</a>
+                            </div>
+                        </div>                         
+                        <div class="d-flex mt-4">
+                            <i class="bi bi-envelope footer-contato-icon me-3"></i>
+
+                            <div class="d-flex align-items-center">
+                                <a href="mailto:vivianecostasgarbi@gmail.com" class="text-decoration-underline text-white fs-6">vivianecostasgarbi@gmail.com</a>
+                            </div>
+                        </div>                         
+                    </div>
 
 
+                    <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                        <h5 class="footer-titulo fs-2">SIGA-NOS</h5>
+                        <div class="servico-linha"></div>
+
+                        <div class="footer-social gap-3">
+                            <a href="https://www.instagram.com/oficinadoalemao24hrs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+                        </div>
+
+                        <div class="footer-mapa">
+                            <h5 class="footer-titulo fs-2">ONDE ESTAMOS</h5>
+                            <div class="servico-linha"></div>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.605117006661!2d-45.538313523916884!3d-22.406239220175586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb799cb0a65095%3A0x34837a79f50935e9!2sTv.%20Zeca%20Euz%C3%A9bio%2C%20413%20-%20Canudos%2C%20Piranguinho%20-%20MG%2C%2037508-000!5e0!3m2!1spt-BR!2sbr!4v1780332864382!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            <a href="https://maps.app.goo.gl/k4j67nuPCvUiiw4w8" target="_blank" class="btn-footer-mapa">
+                                <i class="bi bi-send me-2"></i>
+                                VER NO MAPA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-sub mt-4 py-3">
+                <div class="container">
+                    <div class="row align-items-center gy-3">
+                        <!-- ESQUERDA -->
+                        <div class="col-12 col-lg-4 text-center text-lg-start footer-opaco">
+                            <small>
+                                © 2026 Oficina do Alemão. Todos os direitos reservados.
+                            </small>
+                        </div>
+                        <!-- CENTRO -->
+                        <div class="col-12 col-lg-4">
+                            <div class="footer-pagamentos">
+                                <small class="footer-opaco text-nowrap">ACEITAMOS</small>
+                                <div class="footer-bandeiras d-flex gap-3">
+                                    <img src="img/img-footer/footer-visa.png" alt="Visa" class="footer-bandeira">
+                                    <img src="img/img-footer/footer-mastercard.png" alt="Mastercard" class="footer-bandeira">
+                                    <img src="img/img-footer/footer-elo.png" alt="Elo" class="footer-bandeira">
+                                    <img src="img/img-footer/footer-pix.png" alt="Pix" class="footer-bandeira">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DIREITA -->
+                        <div class="col-12 col-lg-4 text-center text-lg-end footer-opaco">
+                            <small>
+                                DESENVOLVIDO POR
+                                <a href="https://www.linkedin.com/in/gabriel-almeida-768a59331/" target="_blank" class="footer-dev">GABRIEL ALMEIDA <i class="bi bi-linkedin"></i> </a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </footer>
 
 
+        <script src="js/script.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
+        <!-- WhatsApp Fixo Mobile -->
         <div class="whatsapp-fixo d-flex d-lg-none">
-            <a href="#">
+            <a href="https://wa.me/5535998197408?text=Olá!%20Encontrei%20o%20site%20da%20Oficina%20do%20Alemão%20e%20gostaria%20de%20mais%20informações." target="_blank">
                 <i class="bi bi-whatsapp text-light"></i>
             </a>
         </div>
 
+        
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Script AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init({
+                offset: 90,        
+                once: true,
+            });
+        </script>
+        
 
     </body>
 </html>
