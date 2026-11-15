@@ -442,11 +442,6 @@ body{
     border: 1px solid var(--vermelhoPrincipal);
 }
 
-.depoimento-card:hover{
-    border-color: #dc262666;
-    box-shadow: 0 15px 40px #00000073, 0 0 25px #dc262614;
-}
-
 .depoimento-icone {
     width:60px;
     height:60px;
